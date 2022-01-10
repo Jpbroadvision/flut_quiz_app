@@ -10,8 +10,8 @@ class QuizHome extends StatefulWidget {
 class _QuizHomeState extends State<QuizHome> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(title: const Text("True Citizen"),),
     );
   }
 }
