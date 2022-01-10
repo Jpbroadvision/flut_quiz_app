@@ -25,7 +25,11 @@ class _QuizHomeState extends State<QuizHome> {
           Center(
             child: Image.asset("images/flag.png", width: 250,)
             ),
-       
+        Container(
+          // height: 400,
+          child: Text("Questions"),
+        ),
+        const Spacer(),
         ],
 
         )
