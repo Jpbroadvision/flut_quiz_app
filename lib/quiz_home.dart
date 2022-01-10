@@ -18,6 +18,19 @@ class _QuizHomeState extends State<QuizHome> {
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
+      body: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Center(
+            child: Image.asset("images/flag.png", width: 250,)
+            ),
+       
+        ],
+
+        )
+
+      ),
     );
   }
 }
