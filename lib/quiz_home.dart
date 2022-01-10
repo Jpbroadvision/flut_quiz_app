@@ -10,6 +10,8 @@ class QuizHome extends StatefulWidget {
 }
 
 class _QuizHomeState extends State<QuizHome> {
+  List allQuestions = ["The Ghana Independence was on 1996."];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,22 +21,45 @@ class _QuizHomeState extends State<QuizHome> {
         backgroundColor: Colors.blueAccent,
       ),
       body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Center(
-            child: Image.asset("images/flag.png", width: 250,)
-            ),
-        Container(
-          // height: 400,
-          child: Text("Questions"),
-        ),
-        const Spacer(),
-        ],
+              child: Image.asset(
+            "images/flag.png",
+            width: 250,
+          )
+          ),
+          
+          Container(
+        child: Column(
+          children: [
+             Text("Questions", 
+             style: TextStyle(fontSize: 23.0,fontWeight: FontWeight.bold),),
+             Text("$allQuestions"),
+             Text("ANswer")
+
+          ],
 
         )
+            
 
-      ),
+          ),
+          Column(
+            children: [
+              Container(
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.arrow_back_ios_rounded),
+                  
+                  Icon(Icons.arrow_forward_ios_rounded),
+                ],),
+              )
+            ],
+          ),
+          const Spacer(),
+        ],
+      )),
     );
   }
 }
