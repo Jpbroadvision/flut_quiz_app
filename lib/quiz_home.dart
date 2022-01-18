@@ -28,32 +28,28 @@ class _QuizHomeState extends State<QuizHome> {
               child: Image.asset(
             "images/flag.png",
             width: 250,
-          )
-          ),
-          
+          )),
           Container(
-        child: Column(
-          children: [
-             Text("Questions", 
-             style: TextStyle(fontSize: 23.0,fontWeight: FontWeight.bold),),
-             Text("$allQuestions"),
-             Text("ANswer")
-
-          ],
-
-        )
-            
-
-          ),
+              child: Column(
+            children: [
+              Text(
+                "Questions",
+                style: TextStyle(fontSize: 23.0, fontWeight: FontWeight.bold),
+              ),
+              Text("${allQuestions[0]}"),
+              Text("ANswer")
+            ],
+          )),
           Column(
             children: [
               Container(
-                child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Icon(Icons.arrow_back_ios_rounded),
-                  
-                  Icon(Icons.arrow_forward_ios_rounded),
-                ],),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.arrow_back_ios_rounded),
+                    Icon(Icons.arrow_forward_ios_rounded),
+                  ],
+                ),
               )
             ],
           ),
